@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Checkout{% endblock %}
+
+{% block body %}
+    {% include 'shared/layout/header.html.twig' %}
+
+    <main id="main-content" class="bg-aperture-panel py-10 md:py-14">
+        <checkout-app initial-step="{{ initialStep }}"></checkout-app>
+    </main>
+
+    {% include 'shared/layout/footer.html.twig' %}
+{% endblock %}

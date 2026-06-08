@@ -1,5 +1,41 @@
+@config "../../tailwind.config.js";
+
 @import "tailwindcss";
 
-body {
-    background-color: lightgray;
+@layer components {
+    .ap-container {
+        @apply mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8;
+    }
+
+    .ap-button {
+        @apply inline-flex items-center justify-center gap-3 rounded-[3px] font-extrabold uppercase tracking-[0.12em] transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-aperture-blue focus-visible:ring-offset-2;
+    }
+
+    .ap-button-primary {
+        @apply bg-aperture-blue text-white shadow-sm hover:bg-blue-700;
+    }
+
+    .ap-button-ghost {
+        @apply bg-transparent text-aperture-blue hover:text-blue-800;
+    }
+
+    .ap-button-dark {
+        @apply bg-aperture-dark text-white hover:bg-black;
+    }
+
+    .ap-button-sm {
+        @apply px-4 py-3 text-[11px];
+    }
+
+    .ap-button-md {
+        @apply px-6 py-4 text-xs;
+    }
+
+    .ap-button-lg {
+        @apply px-8 py-5 text-sm;
+    }
+
+    .ap-product-card {
+        @apply flex h-full flex-col border border-aperture-line rounded-md bg-white transition duration-200 hover:-translate-y-1 hover:shadow-card;
+    }
 }
