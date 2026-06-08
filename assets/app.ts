@@ -6,6 +6,7 @@ import CartCounter from './components/CartCounter.vue';
 import CartNotifications from './components/CartNotifications.vue';
 import CheckoutApp from './components/checkout/CheckoutApp.vue';
 import HeroBanner from './components/HeroBanner.vue';
+import MobileOffcanvasMenu from './components/MobileOffcanvasMenu.vue';
 import ProductGallery from './components/ProductGallery.vue';
 import ProductTabs from './components/ProductTabs.vue';
 import QuantityPicker from './components/QuantityPicker.vue';
@@ -22,6 +23,7 @@ if (root) {
     app.component('cart-notifications', CartNotifications);
     app.component('checkout-app', CheckoutApp);
     app.component('hero-banner', HeroBanner);
+    app.component('mobile-offcanvas-menu', MobileOffcanvasMenu);
     app.component('product-gallery', ProductGallery);
     app.component('product-tabs', ProductTabs);
     app.component('quantity-picker', QuantityPicker);

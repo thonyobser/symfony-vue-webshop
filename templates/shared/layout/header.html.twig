@@ -22,6 +22,19 @@
     { label: 'Clearance', href: '#' }
 ]) %}
 
+{% set mobileNavItems = [] %}
+{% for item in navItems %}
+    {% set isActive = item.active is defined ? item.active : (
+        (item.route|default(null) and item.route == currentRoute)
+        or (item.categorySlug|default(null) and item.categorySlug == currentCategorySlug)
+    ) %}
+    {% set mobileNavItems = mobileNavItems|merge([{
+        label: item.label,
+        href: item.href,
+        active: isActive
+    }]) %}
+{% endfor %}
+
 <header class="relative z-20 border-b border-aperture-line bg-white">
     <div class="bg-aperture-dark text-white">
         <div class="ap-container flex h-10 items-center justify-between gap-6 text-xs font-extrabold uppercase tracking-wide">
@@ -31,7 +44,7 @@
             </p>
 
             <div class="ml-auto flex items-center gap-8">
-                <a href="{{ header.loginHref }}" class="transition hover:text-aperture-blue">Sign In / Create Account</a>
+                <a href="{{ header.loginHref }}" class="transition hover:text-aperture-blue">Hello Customer #1337</a>
                 <a href="{{ header.cartHref }}" class="inline-flex items-center gap-2 transition hover:text-aperture-blue">
                     {% include 'shared/icons/cart.html.twig' with { class: 'h-4 w-4' } only %}
                     <cart-counter></cart-counter>
@@ -69,13 +82,13 @@
                 </button>
             </form>
 
-            <button type="button" class="inline-flex rounded-md border border-aperture-line p-3 text-aperture-ink lg:hidden" aria-label="Open menu">
-                <span class="block h-4 w-5 space-y-1">
-                    <span class="block h-0.5 bg-current"></span>
-                    <span class="block h-0.5 bg-current"></span>
-                    <span class="block h-0.5 bg-current"></span>
-                </span>
-            </button>
+            <mobile-offcanvas-menu
+                :nav-items="{{ mobileNavItems|json_encode|e('html_attr') }}"
+                home-href="{{ header.homeHref }}"
+                login-href="{{ header.loginHref }}"
+                cart-href="{{ header.cartHref }}"
+                search-action="{{ header.searchAction }}"
+            ></mobile-offcanvas-menu>
         </div>
     </div>
 </header>

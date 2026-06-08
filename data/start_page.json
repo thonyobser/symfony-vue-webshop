@@ -1,27 +1,27 @@
 {
-  "title": "Aperture Science Shop",
-  "metaDescription": "High-quality testing equipment for a better tomorrow.",
-  "heroSlides": [
-    {
-      "title": "Portal Device Launch",
-      "href": "/category/testing-equipment",
-      "desktopImage": "start_page/hero1.png",
-      "tabletImage": "start_page/hero1.png",
-      "mobileImage": "start_page/hero1.png"
-    },
-    {
-      "title": "Sentry Turret Collection",
-      "href": "/category/turrets",
-      "desktopImage": "start_page/hero1.png",
-      "tabletImage": "start_page/hero1.png",
-      "mobileImage": "start_page/hero1.png"
-    },
-    {
-      "title": "Testing Essentials",
-      "href": "/category/testing-equipment",
-      "desktopImage": "start_page/hero1.png",
-      "tabletImage": "start_page/hero1.png",
-      "mobileImage": "start_page/hero1.png"
-    }
-  ]
+    "title": "Aperture Science Shop",
+    "metaDescription": "High-quality testing equipment for a better tomorrow.",
+    "heroSlides": [
+        {
+            "title": "Portal Device Launch",
+            "href": "/category/testing-equipment",
+            "desktopImage": "start_page/hero1.png",
+            "tabletImage": "start_page/hero1_mobile.png",
+            "mobileImage": "start_page/hero1_mobile.png"
+        },
+        {
+            "title": "Sentry Turret Collection",
+            "href": "/category/turrets",
+            "desktopImage": "start_page/hero1.png",
+            "tabletImage": "start_page/hero1_mobile.png",
+            "mobileImage": "start_page/hero1_mobile.png"
+        },
+        {
+            "title": "Testing Essentials",
+            "href": "/category/testing-equipment",
+            "desktopImage": "start_page/hero1.png",
+            "tabletImage": "start_page/hero1_mobile.png",
+            "mobileImage": "start_page/hero1_mobile.png"
+        }
+    ]
 }

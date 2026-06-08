@@ -1,5 +1,5 @@
 <template>
-    <section class="relative overflow-hidden bg-white ap-container pt-12">
+    <section class="bg-white ap-container pt-12">
         <a
             v-if="activeSlide"
             :href="activeSlide.href"
@@ -12,14 +12,14 @@
                 <img
                     :src="activeSlide.mobileImage"
                     :alt="activeSlide.title"
-                    class="h-[22rem] w-full object-cover sm:h-[28rem] lg:h-[35rem]"
+                    class="w-full object-cover sm:h-[28rem] lg:h-[35rem]"
                     fetchpriority="high"
                 >
             </picture>
         </a>
 
-        <div class="ap-container absolute inset-x-0 bottom-4 right-4 flex justify-end">
-            <div class="flex items-center border border-aperture-line bg-white shadow-card">
+        <div class="flex justify-end py-4">
+            <div class="flex items-center border border-aperture-line rounded-md bg-white">
                 <button
                     type="button"
                     class="flex h-12 w-12 items-center justify-center border-r border-aperture-line text-aperture-ink transition hover:bg-aperture-panel hover:text-aperture-blue disabled:opacity-40"
