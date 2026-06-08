@@ -2,6 +2,7 @@
     homeHref: '/',
     loginHref: '#',
     cartHref: path('app_checkout', { step: 'cart' }),
+    wishlistHref: path('app_wishlist'),
     searchAction: path('app_search'),
     announcement: 'Remember: The cake is a lie.'
 }) %}
@@ -45,6 +46,10 @@
 
             <div class="ml-auto flex items-center gap-8">
                 <a href="{{ header.loginHref }}" class="transition hover:text-aperture-blue">Hello Customer #1337</a>
+                <a href="{{ header.wishlistHref }}" class="inline-flex items-center gap-2 transition hover:text-aperture-blue">
+                    {% include 'shared/icons/heart.html.twig' with { class: 'h-4 w-4' } only %}
+                    <wishlist-counter></wishlist-counter>
+                </a>
                 <a href="{{ header.cartHref }}" class="inline-flex items-center gap-2 transition hover:text-aperture-blue">
                     {% include 'shared/icons/cart.html.twig' with { class: 'h-4 w-4' } only %}
                     <cart-counter></cart-counter>
@@ -87,6 +92,7 @@
                 home-href="{{ header.homeHref }}"
                 login-href="{{ header.loginHref }}"
                 cart-href="{{ header.cartHref }}"
+                wishlist-href="{{ header.wishlistHref }}"
                 search-action="{{ header.searchAction }}"
             ></mobile-offcanvas-menu>
         </div>

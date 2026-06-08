@@ -59,6 +59,301 @@
         "shippingText": "Ships within 1–2 business days"
     },
     {
+        "id": "turret-sentry2",
+        "slug": "sentry-turret2",
+        "categorySlug": "turrets",
+        "name": "Sentry Turret",
+        "subtitle": "New \u0026 Improved",
+        "priceCents": 19900,
+        "currency": "USD",
+        "thumbnail": "turret-sentry/turret-sentry1.png",
+        "images": [
+            "turret-sentry/turret-sentry1.png",
+            "turret-sentry/turret-sentry2.png"
+        ],
+        "shortDescription": "Designed for accuracy. Built for testing.",
+        "description": "The Sentry Turret is a stationary security device that detects and eliminates unauthorized test subjects with precision and efficiency.",
+        "featured": true,
+        "status": "in_stock",
+        "features": [
+            {
+                "icon": "target",
+                "label": "Stationary targeting system"
+            },
+            {
+                "icon": "shield",
+                "label": "Precision threat detection"
+            },
+            {
+                "icon": "check-circle",
+                "label": "Built to Aperture Science quality standards"
+            }
+        ],
+        "tabs": {
+            "overview": [
+                "The Sentry Turret is a front-line defense asset designed to protect testing areas and ensure test subject compliance.",
+                "Featuring advanced visual tracking, threat evaluation, and rapid response protocols, it does not tire, hesitate, or feel remorse.",
+                "This model includes upgraded targeting algorithms, increased structural integrity, and improved environmental adaptability."
+            ],
+            "specifications": [
+                {
+                    "label": "Height",
+                    "value": "1.4m"
+                },
+                {
+                    "label": "Power",
+                    "value": "Aperture micro-cell"
+                },
+                {
+                    "label": "Mode",
+                    "value": "Stationary"
+                }
+            ],
+            "in_the_box": [
+                "1 Sentry Turret",
+                "1 Calibration manual",
+                "1 Aperture Science warranty card"
+            ]
+        },
+        "shippingText": "Ships within 1–2 business days"
+    },
+    {
+        "id": "turret-sentry2",
+        "slug": "sentry-turret2",
+        "categorySlug": "turrets",
+        "name": "Sentry Turret",
+        "subtitle": "New \u0026 Improved",
+        "priceCents": 19900,
+        "currency": "USD",
+        "thumbnail": "turret-sentry/turret-sentry1.png",
+        "images": [
+            "turret-sentry/turret-sentry1.png",
+            "turret-sentry/turret-sentry2.png"
+        ],
+        "shortDescription": "Designed for accuracy. Built for testing.",
+        "description": "The Sentry Turret is a stationary security device that detects and eliminates unauthorized test subjects with precision and efficiency.",
+        "featured": true,
+        "status": "in_stock",
+        "features": [
+            {
+                "icon": "target",
+                "label": "Stationary targeting system"
+            },
+            {
+                "icon": "shield",
+                "label": "Precision threat detection"
+            },
+            {
+                "icon": "check-circle",
+                "label": "Built to Aperture Science quality standards"
+            }
+        ],
+        "tabs": {
+            "overview": [
+                "The Sentry Turret is a front-line defense asset designed to protect testing areas and ensure test subject compliance.",
+                "Featuring advanced visual tracking, threat evaluation, and rapid response protocols, it does not tire, hesitate, or feel remorse.",
+                "This model includes upgraded targeting algorithms, increased structural integrity, and improved environmental adaptability."
+            ],
+            "specifications": [
+                {
+                    "label": "Height",
+                    "value": "1.4m"
+                },
+                {
+                    "label": "Power",
+                    "value": "Aperture micro-cell"
+                },
+                {
+                    "label": "Mode",
+                    "value": "Stationary"
+                }
+            ],
+            "in_the_box": [
+                "1 Sentry Turret",
+                "1 Calibration manual",
+                "1 Aperture Science warranty card"
+            ]
+        },
+        "shippingText": "Ships within 1–2 business days"
+    },
+    {
+        "id": "turret-sentry3",
+        "slug": "sentry-turret3",
+        "categorySlug": "turrets",
+        "name": "Sentry Turret",
+        "subtitle": "New \u0026 Improved",
+        "priceCents": 19900,
+        "currency": "USD",
+        "thumbnail": "turret-sentry/turret-sentry1.png",
+        "images": [
+            "turret-sentry/turret-sentry1.png",
+            "turret-sentry/turret-sentry2.png"
+        ],
+        "shortDescription": "Designed for accuracy. Built for testing.",
+        "description": "The Sentry Turret is a stationary security device that detects and eliminates unauthorized test subjects with precision and efficiency.",
+        "featured": true,
+        "status": "in_stock",
+        "features": [
+            {
+                "icon": "target",
+                "label": "Stationary targeting system"
+            },
+            {
+                "icon": "shield",
+                "label": "Precision threat detection"
+            },
+            {
+                "icon": "check-circle",
+                "label": "Built to Aperture Science quality standards"
+            }
+        ],
+        "tabs": {
+            "overview": [
+                "The Sentry Turret is a front-line defense asset designed to protect testing areas and ensure test subject compliance.",
+                "Featuring advanced visual tracking, threat evaluation, and rapid response protocols, it does not tire, hesitate, or feel remorse.",
+                "This model includes upgraded targeting algorithms, increased structural integrity, and improved environmental adaptability."
+            ],
+            "specifications": [
+                {
+                    "label": "Height",
+                    "value": "1.4m"
+                },
+                {
+                    "label": "Power",
+                    "value": "Aperture micro-cell"
+                },
+                {
+                    "label": "Mode",
+                    "value": "Stationary"
+                }
+            ],
+            "in_the_box": [
+                "1 Sentry Turret",
+                "1 Calibration manual",
+                "1 Aperture Science warranty card"
+            ]
+        },
+        "shippingText": "Ships within 1–2 business days"
+    },
+    {
+        "id": "turret-sentry4",
+        "slug": "sentry-turret4",
+        "categorySlug": "turrets",
+        "name": "Sentry Turret",
+        "subtitle": "New \u0026 Improved",
+        "priceCents": 19900,
+        "currency": "USD",
+        "thumbnail": "turret-sentry/turret-sentry1.png",
+        "images": [
+            "turret-sentry/turret-sentry1.png",
+            "turret-sentry/turret-sentry2.png"
+        ],
+        "shortDescription": "Designed for accuracy. Built for testing.",
+        "description": "The Sentry Turret is a stationary security device that detects and eliminates unauthorized test subjects with precision and efficiency.",
+        "featured": true,
+        "status": "in_stock",
+        "features": [
+            {
+                "icon": "target",
+                "label": "Stationary targeting system"
+            },
+            {
+                "icon": "shield",
+                "label": "Precision threat detection"
+            },
+            {
+                "icon": "check-circle",
+                "label": "Built to Aperture Science quality standards"
+            }
+        ],
+        "tabs": {
+            "overview": [
+                "The Sentry Turret is a front-line defense asset designed to protect testing areas and ensure test subject compliance.",
+                "Featuring advanced visual tracking, threat evaluation, and rapid response protocols, it does not tire, hesitate, or feel remorse.",
+                "This model includes upgraded targeting algorithms, increased structural integrity, and improved environmental adaptability."
+            ],
+            "specifications": [
+                {
+                    "label": "Height",
+                    "value": "1.4m"
+                },
+                {
+                    "label": "Power",
+                    "value": "Aperture micro-cell"
+                },
+                {
+                    "label": "Mode",
+                    "value": "Stationary"
+                }
+            ],
+            "in_the_box": [
+                "1 Sentry Turret",
+                "1 Calibration manual",
+                "1 Aperture Science warranty card"
+            ]
+        },
+        "shippingText": "Ships within 1–2 business days"
+    },
+    {
+        "id": "turret-sentry6",
+        "slug": "sentry-turret6",
+        "categorySlug": "turrets",
+        "name": "Sentry Turret",
+        "subtitle": "New \u0026 Improved",
+        "priceCents": 19900,
+        "currency": "USD",
+        "thumbnail": "turret-sentry/turret-sentry1.png",
+        "images": [
+            "turret-sentry/turret-sentry1.png",
+            "turret-sentry/turret-sentry2.png"
+        ],
+        "shortDescription": "Designed for accuracy. Built for testing.",
+        "description": "The Sentry Turret is a stationary security device that detects and eliminates unauthorized test subjects with precision and efficiency.",
+        "featured": true,
+        "status": "in_stock",
+        "features": [
+            {
+                "icon": "target",
+                "label": "Stationary targeting system"
+            },
+            {
+                "icon": "shield",
+                "label": "Precision threat detection"
+            },
+            {
+                "icon": "check-circle",
+                "label": "Built to Aperture Science quality standards"
+            }
+        ],
+        "tabs": {
+            "overview": [
+                "The Sentry Turret is a front-line defense asset designed to protect testing areas and ensure test subject compliance.",
+                "Featuring advanced visual tracking, threat evaluation, and rapid response protocols, it does not tire, hesitate, or feel remorse.",
+                "This model includes upgraded targeting algorithms, increased structural integrity, and improved environmental adaptability."
+            ],
+            "specifications": [
+                {
+                    "label": "Height",
+                    "value": "1.4m"
+                },
+                {
+                    "label": "Power",
+                    "value": "Aperture micro-cell"
+                },
+                {
+                    "label": "Mode",
+                    "value": "Stationary"
+                }
+            ],
+            "in_the_box": [
+                "1 Sentry Turret",
+                "1 Calibration manual",
+                "1 Aperture Science warranty card"
+            ]
+        },
+        "shippingText": "Ships within 1–2 business days"
+    },
+    {
         "id": "turret-deployed",
         "slug": "sentry-turret-deployed",
         "categorySlug": "turrets",

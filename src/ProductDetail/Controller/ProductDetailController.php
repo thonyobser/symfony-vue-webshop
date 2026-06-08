@@ -14,7 +14,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class ProductDetailController extends AbstractController
 {
-    #[Route('/{categorySlug}/{productSlug}', name: 'app_product_detail', methods: ['GET'])]
+    #[Route('product/{categorySlug}/{productSlug}', name: 'app_product_detail', methods: ['GET'])]
     public function __invoke(
         string $categorySlug,
         string $productSlug,

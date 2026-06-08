@@ -15,6 +15,10 @@
         @apply bg-aperture-blue text-white shadow-sm hover:bg-blue-700;
     }
 
+    .ap-button-secondary {
+        @apply border border-aperture-line bg-white text-aperture-blue hover:border-aperture-blue hover:bg-aperture-panel;
+    }
+
     .ap-button-ghost {
         @apply bg-transparent text-aperture-blue hover:text-blue-800;
     }

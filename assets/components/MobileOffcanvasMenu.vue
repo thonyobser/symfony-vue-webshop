@@ -1,7 +1,7 @@
 <template>
     <button
         type="button"
-        class="inline-flex h-12 w-12 items-center justify-center border rounded-md border-aperture-line bg-white text-aperture-ink transition hover:border-aperture-blue hover:text-aperture-blue lg:hidden"
+        class="inline-flex h-12 w-12 items-center justify-center border border-aperture-line bg-white text-aperture-ink transition hover:border-aperture-blue hover:text-aperture-blue lg:hidden"
         aria-label="Open menu"
         :aria-expanded="isOpen ? 'true' : 'false'"
         @click="open"
@@ -38,7 +38,7 @@
                 </header>
 
                 <div class="flex-1 overflow-y-auto px-5 py-6">
-                    <form :action="searchAction" method="get" class="flex h-12 items-center gap-3 border rounded-md border-aperture-line bg-aperture-panel px-4">
+                    <form :action="searchAction" method="get" class="flex h-12 items-center gap-3 border border-aperture-line bg-aperture-panel px-4">
                         <label for="mobile-site-search" class="sr-only">Search Aperture Science</label>
                         <input
                             id="mobile-site-search"
@@ -72,17 +72,24 @@
                     <div class="grid gap-3">
                         <a
                             :href="cartHref"
-                            class="flex h-12 items-center justify-center border border-aperture-dark rounded-md bg-aperture-dark px-4 text-xs font-extrabold uppercase tracking-[0.12em] text-white transition hover:bg-black"
+                            class="flex h-12 items-center justify-center border border-aperture-dark bg-aperture-dark px-4 text-xs font-extrabold uppercase tracking-[0.12em] text-white transition hover:bg-black"
                             @click="close"
                         >
                             <CartCounter />
                         </a>
                         <a
-                            :href="loginHref"
-                            class="flex h-12 items-center justify-center border border-aperture-line rounded-md bg-white px-4 text-xs font-extrabold uppercase tracking-[0.12em] text-aperture-blue transition hover:border-aperture-blue hover:bg-aperture-panel"
+                            :href="wishlistHref"
+                            class="flex h-12 items-center justify-center border border-aperture-line bg-white px-4 text-xs font-extrabold uppercase tracking-[0.12em] text-aperture-blue transition hover:border-aperture-blue hover:bg-aperture-panel"
                             @click="close"
                         >
-                            Hello Customer #1773
+                            <WishlistCounter />
+                        </a>
+                        <a
+                            :href="loginHref"
+                            class="flex h-12 items-center justify-center border border-aperture-line bg-white px-4 text-xs font-extrabold uppercase tracking-[0.12em] text-aperture-blue transition hover:border-aperture-blue hover:bg-aperture-panel"
+                            @click="close"
+                        >
+                            Hello Customer #1337
                         </a>
                     </div>
                 </footer>
@@ -94,6 +101,7 @@
 <script setup lang="ts">
 import { onBeforeUnmount, ref, watch } from 'vue';
 import CartCounter from './CartCounter.vue';
+import WishlistCounter from './WishlistCounter.vue';
 
 type NavItem = {
     label: string;
@@ -106,6 +114,7 @@ defineProps<{
     homeHref: string;
     loginHref: string;
     cartHref: string;
+    wishlistHref: string;
     searchAction: string;
 }>();
 

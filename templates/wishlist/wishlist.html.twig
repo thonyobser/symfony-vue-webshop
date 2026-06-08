@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Wishlist | Aperture Science Shop{% endblock %}
+
+{% block body %}
+    {% include 'shared/layout/header.html.twig' %}
+
+    <main class="bg-white">
+        <wishlist-page></wishlist-page>
+    </main>
+
+    {% include 'shared/layout/footer.html.twig' %}
+{% endblock %}
