@@ -5,9 +5,9 @@
     {
       "title": "Portal Device Launch",
       "href": "/category/testing-equipment",
-      "desktopImage": "https://placehold.co/1800x560/0057a8/ffffff?text=Portal+Device+Launch",
-      "tabletImage": "https://placehold.co/1200x520/0057a8/ffffff?text=Portal+Device+Launch",
-      "mobileImage": "https://placehold.co/760x520/0057a8/ffffff?text=Portal+Device"
+      "desktopImage": "start_page/hero1.png",
+      "tabletImage": "start_page/hero1.png",
+      "mobileImage": "start_page/hero1.png"
     },
     {
       "title": "Sentry Turret Collection",
@@ -19,9 +19,9 @@
     {
       "title": "Testing Essentials",
       "href": "/category/testing-equipment",
-      "desktopImage": "https://placehold.co/1800x560/f5f7fb/111827?text=Testing+Essentials",
-      "tabletImage": "https://placehold.co/1200x520/f5f7fb/111827?text=Testing+Essentials",
-      "mobileImage": "https://placehold.co/760x520/f5f7fb/111827?text=Testing+Gear"
+      "desktopImage": "start_page/hero1.png",
+      "tabletImage": "start_page/hero1.png",
+      "mobileImage": "start_page/hero1.png"
     }
   ]
 }

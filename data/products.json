@@ -1,441 +1,451 @@
 [
     {
-        "id":  "turret-sentry",
-        "slug":  "sentry-turret",
-        "categorySlug":  "turrets",
-        "name":  "Sentry Turret",
-        "subtitle":  "New \u0026 Improved",
-        "priceCents":  19900,
-        "currency":  "USD",
-        "thumbnail":  "sentry-turret.png",
-        "images":  [
-                       "https://placehold.co/900x1000?text=Sentry+Turret",
-                       "https://placehold.co/300x300?text=Side+View"
-                   ],
-        "shortDescription":  "Designed for accuracy. Built for testing.",
-        "description":  "The Sentry Turret is a stationary security device that detects and eliminates unauthorized test subjects with precision and efficiency.",
-        "featured":  true,
-        "status":  "in_stock",
-        "features":  [
-                         {
-                             "icon":  "target",
-                             "label":  "Stationary targeting system"
-                         },
-                         {
-                             "icon":  "shield",
-                             "label":  "Precision threat detection"
-                         },
-                         {
-                             "icon":  "check-circle",
-                             "label":  "Built to Aperture Science quality standards"
-                         }
-                     ],
-        "tabs":  {
-                     "overview":  [
-                                      "The Sentry Turret is a front-line defense asset designed to protect testing areas and ensure test subject compliance.",
-                                      "Featuring advanced visual tracking, threat evaluation, and rapid response protocols, it does not tire, hesitate, or feel remorse.",
-                                      "This model includes upgraded targeting algorithms, increased structural integrity, and improved environmental adaptability."
-                                  ],
-                     "specifications":  [
-                                            {
-                                                "label":  "Height",
-                                                "value":  "1.4m"
-                                            },
-                                            {
-                                                "label":  "Power",
-                                                "value":  "Aperture micro-cell"
-                                            },
-                                            {
-                                                "label":  "Mode",
-                                                "value":  "Stationary"
-                                            }
-                                        ],
-                     "in_the_box":  [
-                                        "1 Sentry Turret",
-                                        "1 Calibration manual",
-                                        "1 Aperture Science warranty card"
-                                    ]
-                 },
-        "shippingText":  "Ships within 1–2 business days"
+        "id": "turret-sentry",
+        "slug": "sentry-turret",
+        "categorySlug": "turrets",
+        "name": "Sentry Turret",
+        "subtitle": "New \u0026 Improved",
+        "priceCents": 19900,
+        "currency": "USD",
+        "thumbnail": "turret-sentry/turret-sentry1.png",
+        "images": [
+            "turret-sentry/turret-sentry1.png",
+            "turret-sentry/turret-sentry2.png"
+        ],
+        "shortDescription": "Designed for accuracy. Built for testing.",
+        "description": "The Sentry Turret is a stationary security device that detects and eliminates unauthorized test subjects with precision and efficiency.",
+        "featured": true,
+        "status": "in_stock",
+        "features": [
+            {
+                "icon": "target",
+                "label": "Stationary targeting system"
+            },
+            {
+                "icon": "shield",
+                "label": "Precision threat detection"
+            },
+            {
+                "icon": "check-circle",
+                "label": "Built to Aperture Science quality standards"
+            }
+        ],
+        "tabs": {
+            "overview": [
+                "The Sentry Turret is a front-line defense asset designed to protect testing areas and ensure test subject compliance.",
+                "Featuring advanced visual tracking, threat evaluation, and rapid response protocols, it does not tire, hesitate, or feel remorse.",
+                "This model includes upgraded targeting algorithms, increased structural integrity, and improved environmental adaptability."
+            ],
+            "specifications": [
+                {
+                    "label": "Height",
+                    "value": "1.4m"
+                },
+                {
+                    "label": "Power",
+                    "value": "Aperture micro-cell"
+                },
+                {
+                    "label": "Mode",
+                    "value": "Stationary"
+                }
+            ],
+            "in_the_box": [
+                "1 Sentry Turret",
+                "1 Calibration manual",
+                "1 Aperture Science warranty card"
+            ]
+        },
+        "shippingText": "Ships within 1–2 business days"
     },
     {
-        "id":  "turret-deployed",
-        "slug":  "sentry-turret-deployed",
-        "categorySlug":  "turrets",
-        "name":  "Sentry Turret",
-        "subtitle":  "Deployed",
-        "priceCents":  19900,
-        "currency":  "USD",
-        "thumbnail":  "https://placehold.co/500x500?text=Deployed+Turret",
-        "images":  [
-                       "https://placehold.co/900x1000?text=Deployed+Turret"
-                   ],
-        "shortDescription":  "Ready for immediate deployment.",
-        "description":  "A fully deployed sentry unit for permanent test chamber placement.",
-        "featured":  false,
-        "status":  "in_stock",
-        "features":  [
-                         {
-                             "icon":  "target",
-                             "label":  "Fast target acquisition"
-                         }
-                     ],
-        "tabs":  {
-                     "overview":  [
-                                      "Ready-to-place sentry model for controlled testing environments."
-                                  ],
-                     "specifications":  [
-                                            {
-                                                "label":  "Mode",
-                                                "value":  "Deployed"
-                                            }
-                                        ],
-                     "in_the_box":  [
-                                        "1 Deployed Turret"
-                                    ]
-                 },
-        "shippingText":  "Ships within 1–2 business days"
+        "id": "turret-deployed",
+        "slug": "sentry-turret-deployed",
+        "categorySlug": "turrets",
+        "name": "Sentry Turret",
+        "subtitle": "Deployed",
+        "priceCents": 19900,
+        "currency": "USD",
+        "thumbnail": "turret-sentry/turret-sentry1.png",
+        "images": [
+            "turret-sentry/turret-sentry1.png",
+            "turret-sentry/turret-sentry2.png"
+        ],
+        "shortDescription": "Ready for immediate deployment.",
+        "description": "A fully deployed sentry unit for permanent test chamber placement.",
+        "featured": false,
+        "status": "in_stock",
+        "features": [
+            {
+                "icon": "target",
+                "label": "Fast target acquisition"
+            }
+        ],
+        "tabs": {
+            "overview": [
+                "Ready-to-place sentry model for controlled testing environments."
+            ],
+            "specifications": [
+                {
+                    "label": "Mode",
+                    "value": "Deployed"
+                }
+            ],
+            "in_the_box": [
+                "1 Deployed Turret"
+            ]
+        },
+        "shippingText": "Ships within 1–2 business days"
     },
     {
-        "id":  "turret-defender",
-        "slug":  "defender-turret",
-        "categorySlug":  "turrets",
-        "name":  "Defender Turret",
-        "subtitle":  null,
-        "priceCents":  24900,
-        "currency":  "USD",
-        "thumbnail":  "https://placehold.co/500x500?text=Defender+Turret",
-        "images":  [
-                       "https://placehold.co/900x1000?text=Defender+Turret"
-                   ],
-        "shortDescription":  "Extra durable testing defense.",
-        "description":  "A reinforced turret for tougher test environments.",
-        "featured":  false,
-        "status":  "in_stock",
-        "features":  [
-                         {
-                             "icon":  "shield",
-                             "label":  "Reinforced shell"
-                         }
-                     ],
-        "tabs":  {
-                     "overview":  [
-                                      "Built for durability and repeated chamber resets."
-                                  ],
-                     "specifications":  [
-                                            {
-                                                "label":  "Armor",
-                                                "value":  "Reinforced"
-                                            }
-                                        ],
-                     "in_the_box":  [
-                                        "1 Defender Turret"
-                                    ]
-                 },
-        "shippingText":  "Ships within 1–2 business days"
+        "id": "turret-defender",
+        "slug": "defender-turret",
+        "categorySlug": "turrets",
+        "name": "Defender Turret",
+        "subtitle": null,
+        "priceCents": 24900,
+        "currency": "USD",
+        "thumbnail": "turret-sentry/turret-sentry1.png",
+        "images": [
+            "turret-sentry/turret-sentry1.png",
+            "turret-sentry/turret-sentry2.png"
+        ],
+        "shortDescription": "Extra durable testing defense.",
+        "description": "A reinforced turret for tougher test environments.",
+        "featured": false,
+        "status": "in_stock",
+        "features": [
+            {
+                "icon": "shield",
+                "label": "Reinforced shell"
+            }
+        ],
+        "tabs": {
+            "overview": [
+                "Built for durability and repeated chamber resets."
+            ],
+            "specifications": [
+                {
+                    "label": "Armor",
+                    "value": "Reinforced"
+                }
+            ],
+            "in_the_box": [
+                "1 Defender Turret"
+            ]
+        },
+        "shippingText": "Ships within 1–2 business days"
     },
     {
-        "id":  "turret-rocket",
-        "slug":  "rocket-turret",
-        "categorySlug":  "turrets",
-        "name":  "Rocket Turret",
-        "subtitle":  null,
-        "priceCents":  34900,
-        "currency":  "USD",
-        "thumbnail":  "https://placehold.co/500x500?text=Rocket+Turret",
-        "images":  [
-                       "https://placehold.co/900x1000?text=Rocket+Turret"
-                   ],
-        "shortDescription":  "Large payload delivery for science.",
-        "description":  "Heavy-range turret platform for specialized experiments.",
-        "featured":  false,
-        "status":  "in_stock",
-        "features":  [
-                         {
-                             "icon":  "rocket",
-                             "label":  "Live fire ready"
-                         }
-                     ],
-        "tabs":  {
-                     "overview":  [
-                                      "For live-fire approved testing courses only."
-                                  ],
-                     "specifications":  [
-                                            {
-                                                "label":  "Payload",
-                                                "value":  "Rocket"
-                                            }
-                                        ],
-                     "in_the_box":  [
-                                        "1 Rocket Turret"
-                                    ]
-                 },
-        "shippingText":  "Ships within 2–3 business days"
+        "id": "turret-rocket",
+        "slug": "rocket-turret",
+        "categorySlug": "turrets",
+        "name": "Rocket Turret",
+        "subtitle": null,
+        "priceCents": 34900,
+        "currency": "USD",
+        "thumbnail": "turret-sentry/turret-sentry1.png",
+        "images": [
+            "turret-sentry/turret-sentry1.png",
+            "turret-sentry/turret-sentry2.png"
+        ],
+        "shortDescription": "Large payload delivery for science.",
+        "description": "Heavy-range turret platform for specialized experiments.",
+        "featured": false,
+        "status": "in_stock",
+        "features": [
+            {
+                "icon": "rocket",
+                "label": "Live fire ready"
+            }
+        ],
+        "tabs": {
+            "overview": [
+                "For live-fire approved testing courses only."
+            ],
+            "specifications": [
+                {
+                    "label": "Payload",
+                    "value": "Rocket"
+                }
+            ],
+            "in_the_box": [
+                "1 Rocket Turret"
+            ]
+        },
+        "shippingText": "Ships within 2–3 business days"
     },
     {
-        "id":  "turret-laser",
-        "slug":  "laser-turret",
-        "categorySlug":  "turrets",
-        "name":  "Laser Turret",
-        "subtitle":  null,
-        "priceCents":  32900,
-        "currency":  "USD",
-        "thumbnail":  "https://placehold.co/500x500?text=Laser+Turret",
-        "images":  [
-                       "https://placehold.co/900x1000?text=Laser+Turret"
-                   ],
-        "shortDescription":  "Continuous beam alignment.",
-        "description":  "Precision laser turret for uninterrupted measurement and deterrence.",
-        "featured":  false,
-        "status":  "in_stock",
-        "features":  [
-                         {
-                             "icon":  "target",
-                             "label":  "Continuous targeting beam"
-                         }
-                     ],
-        "tabs":  {
-                     "overview":  [
-                                      "Designed for optical targeting experiments."
-                                  ],
-                     "specifications":  [
-                                            {
-                                                "label":  "Emitter",
-                                                "value":  "Laser"
-                                            }
-                                        ],
-                     "in_the_box":  [
-                                        "1 Laser Turret"
-                                    ]
-                 },
-        "shippingText":  "Ships within 1–2 business days"
+        "id": "turret-laser",
+        "slug": "laser-turret",
+        "categorySlug": "turrets",
+        "name": "Laser Turret",
+        "subtitle": null,
+        "priceCents": 32900,
+        "currency": "USD",
+        "thumbnail": "turret-sentry/turret-sentry1.png",
+        "images": [
+            "turret-sentry/turret-sentry1.png",
+            "turret-sentry/turret-sentry2.png"
+        ],
+        "shortDescription": "Continuous beam alignment.",
+        "description": "Precision laser turret for uninterrupted measurement and deterrence.",
+        "featured": false,
+        "status": "in_stock",
+        "features": [
+            {
+                "icon": "target",
+                "label": "Continuous targeting beam"
+            }
+        ],
+        "tabs": {
+            "overview": [
+                "Designed for optical targeting experiments."
+            ],
+            "specifications": [
+                {
+                    "label": "Emitter",
+                    "value": "Laser"
+                }
+            ],
+            "in_the_box": [
+                "1 Laser Turret"
+            ]
+        },
+        "shippingText": "Ships within 1–2 business days"
     },
     {
-        "id":  "turret-floor",
-        "slug":  "floor-turret",
-        "categorySlug":  "turrets",
-        "name":  "Floor Turret",
-        "subtitle":  null,
-        "priceCents":  17900,
-        "currency":  "USD",
-        "thumbnail":  "https://placehold.co/500x500?text=Floor+Turret",
-        "images":  [
-                       "https://placehold.co/900x1000?text=Floor+Turret"
-                   ],
-        "shortDescription":  "Compact floor-based coverage.",
-        "description":  "Low-profile sentry support for chamber floors and corridors.",
-        "featured":  false,
-        "status":  "in_stock",
-        "features":  [
-                         {
-                             "icon":  "target",
-                             "label":  "Low-profile coverage"
-                         }
-                     ],
-        "tabs":  {
-                     "overview":  [
-                                      "Compact defensive coverage for small chambers."
-                                  ],
-                     "specifications":  [
-                                            {
-                                                "label":  "Profile",
-                                                "value":  "Low"
-                                            }
-                                        ],
-                     "in_the_box":  [
-                                        "1 Floor Turret"
-                                    ]
-                 },
-        "shippingText":  "Ships within 1–2 business days"
+        "id": "turret-floor",
+        "slug": "floor-turret",
+        "categorySlug": "turrets",
+        "name": "Floor Turret",
+        "subtitle": null,
+        "priceCents": 17900,
+        "currency": "USD",
+        "thumbnail": "turret-sentry/turret-sentry1.png",
+        "images": [
+            "turret-sentry/turret-sentry1.png",
+            "turret-sentry/turret-sentry2.png"
+        ],
+        "shortDescription": "Compact floor-based coverage.",
+        "description": "Low-profile sentry support for chamber floors and corridors.",
+        "featured": false,
+        "status": "in_stock",
+        "features": [
+            {
+                "icon": "target",
+                "label": "Low-profile coverage"
+            }
+        ],
+        "tabs": {
+            "overview": [
+                "Compact defensive coverage for small chambers."
+            ],
+            "specifications": [
+                {
+                    "label": "Profile",
+                    "value": "Low"
+                }
+            ],
+            "in_the_box": [
+                "1 Floor Turret"
+            ]
+        },
+        "shippingText": "Ships within 1–2 business days"
     },
     {
-        "id":  "turret-triple-threat",
-        "slug":  "triple-threat-turret",
-        "categorySlug":  "turrets",
-        "name":  "Triple Threat Turret",
-        "subtitle":  null,
-        "priceCents":  27900,
-        "currency":  "USD",
-        "thumbnail":  "https://placehold.co/500x500?text=Triple+Threat",
-        "images":  [
-                       "https://placehold.co/900x1000?text=Triple+Threat"
-                   ],
-        "shortDescription":  "Three times the science.",
-        "description":  "Multi-sensor model for wide-angle threat detection.",
-        "featured":  false,
-        "status":  "in_stock",
-        "features":  [
-                         {
-                             "icon":  "target",
-                             "label":  "Triple sensor stack"
-                         }
-                     ],
-        "tabs":  {
-                     "overview":  [
-                                      "Provides additional visibility for complex testing lanes."
-                                  ],
-                     "specifications":  [
-                                            {
-                                                "label":  "Sensors",
-                                                "value":  "3"
-                                            }
-                                        ],
-                     "in_the_box":  [
-                                        "1 Triple Threat Turret"
-                                    ]
-                 },
-        "shippingText":  "Ships within 1–2 business days"
+        "id": "turret-triple-threat",
+        "slug": "triple-threat-turret",
+        "categorySlug": "turrets",
+        "name": "Triple Threat Turret",
+        "subtitle": null,
+        "priceCents": 27900,
+        "currency": "USD",
+        "thumbnail": "turret-sentry/turret-sentry1.png",
+        "images": [
+            "turret-sentry/turret-sentry1.png",
+            "turret-sentry/turret-sentry2.png"
+        ],
+        "shortDescription": "Three times the science.",
+        "description": "Multi-sensor model for wide-angle threat detection.",
+        "featured": false,
+        "status": "in_stock",
+        "features": [
+            {
+                "icon": "target",
+                "label": "Triple sensor stack"
+            }
+        ],
+        "tabs": {
+            "overview": [
+                "Provides additional visibility for complex testing lanes."
+            ],
+            "specifications": [
+                {
+                    "label": "Sensors",
+                    "value": "3"
+                }
+            ],
+            "in_the_box": [
+                "1 Triple Threat Turret"
+            ]
+        },
+        "shippingText": "Ships within 1–2 business days"
     },
     {
-        "id":  "turret-camo",
-        "slug":  "camo-sentry-turret",
-        "categorySlug":  "turrets",
-        "name":  "Camo Sentry Turret",
-        "subtitle":  "Limited Edition",
-        "priceCents":  24900,
-        "currency":  "USD",
-        "thumbnail":  "https://placehold.co/500x500?text=Camo+Turret",
-        "images":  [
-                       "https://placehold.co/900x1000?text=Camo+Turret"
-                   ],
-        "shortDescription":  "Limited camouflage shell.",
-        "description":  "A cosmetic limited edition sentry turret with standard internals.",
-        "featured":  false,
-        "status":  "limited",
-        "features":  [
-                         {
-                             "icon":  "check-circle",
-                             "label":  "Limited shell finish"
-                         }
-                     ],
-        "tabs":  {
-                     "overview":  [
-                                      "Limited edition finish for morale-neutral test spaces."
-                                  ],
-                     "specifications":  [
-                                            {
-                                                "label":  "Finish",
-                                                "value":  "Camouflage"
-                                            }
-                                        ],
-                     "in_the_box":  [
-                                        "1 Camo Sentry Turret"
-                                    ]
-                 },
-        "shippingText":  "Ships within 3–5 business days"
+        "id": "turret-camo",
+        "slug": "camo-sentry-turret",
+        "categorySlug": "turrets",
+        "name": "Camo Sentry Turret",
+        "subtitle": "Limited Edition",
+        "priceCents": 24900,
+        "currency": "USD",
+        "thumbnail": "turret-sentry/turret-sentry1.png",
+        "images": [
+            "turret-sentry/turret-sentry1.png",
+            "turret-sentry/turret-sentry2.png"
+        ],
+        "shortDescription": "Limited camouflage shell.",
+        "description": "A cosmetic limited edition sentry turret with standard internals.",
+        "featured": false,
+        "status": "limited",
+        "features": [
+            {
+                "icon": "check-circle",
+                "label": "Limited shell finish"
+            }
+        ],
+        "tabs": {
+            "overview": [
+                "Limited edition finish for morale-neutral test spaces."
+            ],
+            "specifications": [
+                {
+                    "label": "Finish",
+                    "value": "Camouflage"
+                }
+            ],
+            "in_the_box": [
+                "1 Camo Sentry Turret"
+            ]
+        },
+        "shippingText": "Ships within 3–5 business days"
     },
     {
-        "id":  "portal-device",
-        "slug":  "aperture-handheld-portal-device",
-        "categorySlug":  "testing-equipment",
-        "name":  "Aperture Handheld Portal Device",
-        "subtitle":  null,
-        "priceCents":  49900,
-        "currency":  "USD",
-        "thumbnail":  "https://placehold.co/500x500?text=Portal+Device",
-        "images":  [
-                       "https://placehold.co/900x1000?text=Portal+Device"
-                   ],
-        "shortDescription":  "Now you are thinking with portals.",
-        "description":  "The flagship handheld testing device for spatial experimentation.",
-        "featured":  true,
-        "status":  "in_stock",
-        "features":  [
-                         {
-                             "icon":  "check-circle",
-                             "label":  "Dual portal support"
-                         }
-                     ],
-        "tabs":  {
-                     "overview":  [
-                                      "High-quality testing equipment for a better tomorrow."
-                                  ],
-                     "specifications":  [
-                                            {
-                                                "label":  "Mode",
-                                                "value":  "Handheld"
-                                            }
-                                        ],
-                     "in_the_box":  [
-                                        "1 Portal Device"
-                                    ]
-                 },
-        "shippingText":  "Ships within 1–2 business days"
+        "id": "portal-device",
+        "slug": "aperture-handheld-portal-device",
+        "categorySlug": "testing-equipment",
+        "name": "Aperture Handheld Portal Device",
+        "subtitle": null,
+        "priceCents": 49900,
+        "currency": "USD",
+        "thumbnail": "turret-sentry/turret-sentry1.png",
+        "images": [
+            "turret-sentry/turret-sentry1.png",
+            "turret-sentry/turret-sentry2.png"
+        ],
+        "shortDescription": "Now you are thinking with portals.",
+        "description": "The flagship handheld testing device for spatial experimentation.",
+        "featured": true,
+        "status": "in_stock",
+        "features": [
+            {
+                "icon": "check-circle",
+                "label": "Dual portal support"
+            }
+        ],
+        "tabs": {
+            "overview": [
+                "High-quality testing equipment for a better tomorrow."
+            ],
+            "specifications": [
+                {
+                    "label": "Mode",
+                    "value": "Handheld"
+                }
+            ],
+            "in_the_box": [
+                "1 Portal Device"
+            ]
+        },
+        "shippingText": "Ships within 1–2 business days"
     },
     {
-        "id":  "companion-cube",
-        "slug":  "weighted-companion-cube",
-        "categorySlug":  "testing-equipment",
-        "name":  "Weighted Companion Cube",
-        "subtitle":  null,
-        "priceCents":  7900,
-        "currency":  "USD",
-        "thumbnail":  "https://placehold.co/500x500?text=Companion+Cube",
-        "images":  [
-                       "https://placehold.co/900x1000?text=Companion+Cube"
-                   ],
-        "shortDescription":  "Reliable emotional support object.",
-        "description":  "A trusted weighted cube for standard test chamber use.",
-        "featured":  true,
-        "status":  "in_stock",
-        "features":  [
-                         {
-                             "icon":  "heart",
-                             "label":  "Emotionally reassuring"
-                         }
-                     ],
-        "tabs":  {
-                     "overview":  [
-                                      "Please do not incinerate."
-                                  ],
-                     "specifications":  [
-                                            {
-                                                "label":  "Weight",
-                                                "value":  "Companion-grade"
-                                            }
-                                        ],
-                     "in_the_box":  [
-                                        "1 Weighted Companion Cube"
-                                    ]
-                 },
-        "shippingText":  "Ships within 1–2 business days"
+        "id": "companion-cube",
+        "slug": "weighted-companion-cube",
+        "categorySlug": "testing-equipment",
+        "name": "Weighted Companion Cube",
+        "subtitle": null,
+        "priceCents": 7900,
+        "currency": "USD",
+        "thumbnail": "turret-sentry/turret-sentry1.png",
+        "images": [
+            "turret-sentry/turret-sentry1.png",
+            "turret-sentry/turret-sentry2.png"
+        ],
+        "shortDescription": "Reliable emotional support object.",
+        "description": "A trusted weighted cube for standard test chamber use.",
+        "featured": true,
+        "status": "in_stock",
+        "features": [
+            {
+                "icon": "heart",
+                "label": "Emotionally reassuring"
+            }
+        ],
+        "tabs": {
+            "overview": [
+                "Please do not incinerate."
+            ],
+            "specifications": [
+                {
+                    "label": "Weight",
+                    "value": "Companion-grade"
+                }
+            ],
+            "in_the_box": [
+                "1 Weighted Companion Cube"
+            ]
+        },
+        "shippingText": "Ships within 1–2 business days"
     },
     {
-        "id":  "coffee-mug",
-        "slug":  "aperture-science-coffee-mug",
-        "categorySlug":  "apparel",
-        "name":  "Aperture Science Coffee Mug",
-        "subtitle":  null,
-        "priceCents":  1600,
-        "currency":  "USD",
-        "thumbnail":  "https://placehold.co/500x500?text=Coffee+Mug",
-        "images":  [
-                       "https://placehold.co/900x1000?text=Coffee+Mug"
-                   ],
-        "shortDescription":  "Science begins after coffee.",
-        "description":  "Ceramic mug with Aperture Science mark.",
-        "featured":  true,
-        "status":  "in_stock",
-        "features":  [
-                         {
-                             "icon":  "check-circle",
-                             "label":  "Dishwasher safe"
-                         }
-                     ],
-        "tabs":  {
-                     "overview":  [
-                                      "For enrichment center break rooms."
-                                  ],
-                     "specifications":  [
-                                            {
-                                                "label":  "Capacity",
-                                                "value":  "11oz"
-                                            }
-                                        ],
-                     "in_the_box":  [
-                                        "1 Coffee Mug"
-                                    ]
-                 },
-        "shippingText":  "Ships within 1–2 business days"
+        "id": "coffee-mug",
+        "slug": "aperture-science-coffee-mug",
+        "categorySlug": "apparel",
+        "name": "Aperture Science Coffee Mug",
+        "subtitle": null,
+        "priceCents": 1600,
+        "currency": "USD",
+        "thumbnail": "turret-sentry/turret-sentry1.png",
+        "images": [
+            "turret-sentry/turret-sentry1.png",
+            "turret-sentry/turret-sentry2.png"
+        ],
+        "shortDescription": "Science begins after coffee.",
+        "description": "Ceramic mug with Aperture Science mark.",
+        "featured": true,
+        "status": "in_stock",
+        "features": [
+            {
+                "icon": "check-circle",
+                "label": "Dishwasher safe"
+            }
+        ],
+        "tabs": {
+            "overview": [
+                "For enrichment center break rooms."
+            ],
+            "specifications": [
+                {
+                    "label": "Capacity",
+                    "value": "11oz"
+                }
+            ],
+            "in_the_box": [
+                "1 Coffee Mug"
+            ]
+        },
+        "shippingText": "Ships within 1–2 business days"
     }
 ]

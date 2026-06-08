@@ -4,7 +4,7 @@
         "name":  "Turrets",
         "title":  "Turrets",
         "description":  "Designed for accuracy. Built for testing. Every turret is manufactured to Aperture Science quality standards.",
-        "bannerImage":  "https://placehold.co/760x300?text=Turrets",
+        "bannerImage":  "start_page/hero1.png",
         "breadcrumbs":  [
                             {
                                 "label":  "Home",
@@ -21,7 +21,7 @@
         "name":  "Testing Equipment",
         "title":  "Testing Equipment",
         "description":  "High-quality testing equipment for a better tomorrow.",
-        "bannerImage":  "https://placehold.co/760x300?text=Testing+Equipment",
+        "bannerImage":  "start_page/hero1.png",
         "breadcrumbs":  [
                             {
                                 "label":  "Home",
