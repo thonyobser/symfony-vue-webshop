@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ category.title }} | Aperture Science Store{% endblock %}
+
+{% block body %}
+    {% include 'shared/layout/header.html.twig' %}
+
+    <main id="main-content">
+        {% include 'category/sections/category-banner.html.twig' with { category: category, breadcrumbs: breadcrumbs } only %}
+        {% include 'shared/sections/usp-bar.html.twig' with { usps: usps } only %}
+        {% include 'category/sections/product-listing.html.twig' with {
+            category: category,
+            products: products,
+            productCount: productCount
+        } only %}
+    </main>
+
+    {% include 'shared/layout/footer.html.twig' %}
+{% endblock %}

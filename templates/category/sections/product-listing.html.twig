@@ -1,0 +1,23 @@
+<section class="bg-white py-8 md:py-10">
+    <div class="ap-container">
+        <p class="mt-7 text-sm leading-6 text-aperture-muted">
+            {{ listingSummary|default('Showing ' ~ productCount ~ ' ' ~ category.name|lower) }}
+        </p>
+
+        <div class="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {% for product in products %}
+                {% include 'shared/components/product-card.html.twig' with {
+                    product: product,
+                    imageAspect: 'aspect-square',
+                    imagePadding: 'p-5 md:p-7'
+                } only %}
+            {% else %}
+                <p class="col-span-full text-sm text-aperture-muted">{{ emptyMessage|default('No products found.') }}</p>
+            {% endfor %}
+        </div>
+
+        {% if pagination is defined and pagination.totalPages|default(1) > 1 %}
+            {% include 'category/components/pagination.html.twig' with pagination only %}
+        {% endif %}
+    </div>
+</section>

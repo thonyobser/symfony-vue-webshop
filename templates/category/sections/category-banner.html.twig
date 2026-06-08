@@ -1,0 +1,26 @@
+{% set bannerImage = category.bannerImage %}
+{% set bannerImageSrc = storage_url(bannerImage) %}
+
+<section class="ap-category-banner">
+    <div class="ap-container relative grid min-h-[19rem] items-center gap-8 py-10 md:grid-cols-[1fr_0.85fr] lg:py-12">
+        <div class="max-w-2xl">
+            {% include 'shared/components/breadcrumbs.html.twig' with { breadcrumbs: breadcrumbs|default(category.breadcrumbs) } only %}
+
+            <h1 class="mt-10 font-display text-6xl font-extrabold uppercase leading-none tracking-tight text-aperture-dark sm:text-[5.75rem] lg:text-8xl">
+                {{ category.title }}
+            </h1>
+
+            <p class="mt-7 max-w-2xl text-base leading-8 text-aperture-muted md:text-lg">
+                {{ category.description }}
+            </p>
+        </div>
+
+        <div class="hidden h-full min-h-[15rem] items-center justify-center md:flex">
+            <img
+                src="{{ bannerImageSrc }}"
+                alt="{{ category.title }}"
+                class="h-full max-h-72 w-full object-contain object-center border border-aperture-line rounded-md overflow-hidden"
+            >
+        </div>
+    </div>
+</section>
