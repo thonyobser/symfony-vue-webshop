@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="flex min-h-[34rem] items-center justify-center border border-aperture-line bg-gradient-to-b from-white to-aperture-panel p-8 md:min-h-[42rem] md:p-12">
+        <div class="flex min-h-[34rem] items-center justify-center border rounded-md border-aperture-line p-8 md:min-h-[42rem] md:p-12">
             <img
                 :src="activeImage.src"
                 :alt="productName"
@@ -14,7 +14,7 @@
                 v-for="(image, index) in images"
                 :key="`${image.src}-${index}`"
                 type="button"
-                class="flex h-24 w-24 items-center justify-center border bg-white p-2 transition hover:border-aperture-blue"
+                class="flex h-24 w-24 items-center justify-center border bg-white p-2 rounded-md transition hover:border-aperture-blue"
                 :class="isActive(index) ? 'border-aperture-blue ring-1 ring-aperture-blue' : 'border-aperture-line'"
                 :aria-label="`View ${productName} image ${index + 1}`"
                 :aria-current="isActive(index) ? 'true' : 'false'"

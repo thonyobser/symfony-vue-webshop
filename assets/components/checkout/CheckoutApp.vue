@@ -13,7 +13,7 @@
                     v-for="step in steps"
                     :key="step.id"
                     type="button"
-                    class="border px-4 py-3 text-xs font-extrabold uppercase tracking-[0.12em] transition"
+                    class="border rounded-md px-4 py-3 text-xs font-extrabold uppercase tracking-[0.12em] transition"
                     :class="step.id === activeStep ? 'border-aperture-blue bg-aperture-blue text-white' : 'border-aperture-line bg-white text-aperture-ink hover:border-aperture-blue'"
                     @click="goTo(step.id)"
                 >
@@ -23,7 +23,7 @@
         </div>
 
         <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_24rem]">
-            <section class="min-w-0 bg-white p-5 shadow-card md:p-8">
+            <section class="min-w-0 bg-white p-5 shadow-card rounded-md md:p-8">
                 <CheckoutCartStep v-if="activeStep === 'cart'" @next="goTo('shipping')" />
                 <CheckoutShippingStep v-else-if="activeStep === 'shipping'" :idempotency-key="idempotencyKey" @next="goTo('payment')" @back="goTo('cart')" />
                 <CheckoutPaymentStep v-else-if="activeStep === 'payment'" :idempotency-key="idempotencyKey" @next="goTo('summary')" @back="goTo('shipping')" />

@@ -1,5 +1,5 @@
 <template>
-    <aside class="h-fit bg-white p-5 shadow-card md:p-6">
+    <aside class="h-fit bg-white p-5 shadow-card rounded-md md:p-6">
         <h2 class="text-lg font-black text-aperture-dark">Summary</h2>
 
         <dl class="mt-5 space-y-3 text-sm">

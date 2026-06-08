@@ -1,5 +1,5 @@
 <template>
-    <div class="inline-flex h-14 w-full items-center justify-between border border-aperture-line bg-white sm:w-36">
+    <div class="inline-flex h-14 w-full items-center justify-between border border-aperture-line rounded-md bg-white sm:w-36">
         <button
             type="button"
             class="flex h-full w-12 items-center justify-center text-aperture-muted transition hover:text-aperture-blue"

@@ -8,7 +8,7 @@
         <div
             v-for="notification in notifications"
             :key="notification.id"
-            class="flex items-start justify-between gap-4 border border-aperture-line bg-white px-4 py-3 text-sm font-bold text-aperture-ink shadow-card"
+            class="flex items-start justify-between gap-4 border border-aperture-line rounded-md bg-white px-4 py-3 text-sm font-bold text-aperture-ink shadow-card"
         >
             <span>{{ notification.message }}</span>
             <button

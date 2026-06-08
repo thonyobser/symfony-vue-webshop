@@ -9,9 +9,9 @@
             <article
                 v-for="item in cartItems"
                 :key="item.id"
-                class="grid gap-4 border border-aperture-line p-4 sm:grid-cols-[6rem_minmax(0,1fr)_9rem_auto]"
+                class="grid gap-4 border rounded-md border-aperture-line p-4 sm:grid-cols-[6rem_minmax(0,1fr)_9rem_auto]"
             >
-                <a :href="item.url" class="flex h-24 w-24 items-center justify-center bg-aperture-panel p-2">
+                <a :href="item.url" class="flex h-24 w-24 items-center justify-center p-2">
                     <img :src="item.image" :alt="item.name" class="h-full w-full object-contain">
                 </a>
 
