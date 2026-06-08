@@ -1,0 +1,26 @@
+<section class="ap-category-banner">
+    <div class="ap-container grid min-h-[320px] items-center gap-10 py-12 lg:grid-cols-[minmax(0,1fr)_minmax(360px,0.75fr)] lg:py-16">
+        <div>
+            {% include 'shared/components/breadcrumbs.html.twig' with { breadcrumbs: breadcrumbs|default(page.breadcrumbs) } only %}
+
+            {% if page.eyebrow %}
+                <p class="mt-8 text-xs font-extrabold uppercase tracking-[0.18em] text-aperture-blue">{{ page.eyebrow }}</p>
+            {% endif %}
+
+            <h1 class="mt-4 font-display text-6xl font-black uppercase leading-none tracking-tight text-aperture-dark md:text-7xl">
+                {{ page.title }}
+            </h1>
+
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-aperture-muted">{{ page.intro }}</p>
+        </div>
+
+        <div class="hidden justify-end lg:flex">
+            <img
+                src="https://placehold.co/720x360/f8fafc/111827?text={{ page.title|url_encode }}"
+                alt="{{ page.title }}"
+                class="max-h-72 w-full max-w-2xl object-contain"
+                loading="eager"
+            >
+        </div>
+    </div>
+</section>

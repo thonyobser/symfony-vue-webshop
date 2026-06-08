@@ -1,0 +1,17 @@
+<section class="bg-white py-12 md:py-14">
+    <div class="ap-container">
+        {% include 'shared/components/section-heading.html.twig' with {
+            title: featuredTitle,
+            actionLabel: featuredActionLabel,
+            actionHref: featuredActionHref
+        } only %}
+
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {% for product in products %}
+                {% include 'shared/components/product-card.html.twig' with { product: product } only %}
+            {% else %}
+                <p class="text-sm text-aperture-muted">No featured products found.</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>

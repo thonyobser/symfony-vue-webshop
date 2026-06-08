@@ -1,0 +1,13 @@
+{% set heroPayload = [] %}
+
+{% for slide in heroSlides %}
+    {% set heroPayload = heroPayload|merge([{
+        title: slide.title,
+        href: slide.href,
+        desktopImage: storage_url(slide.desktopImage),
+        tabletImage: storage_url(slide.tabletImage),
+        mobileImage: storage_url(slide.mobileImage)
+    }]) %}
+{% endfor %}
+
+<hero-banner :slides="{{ heroPayload|json_encode|e('html_attr') }}"></hero-banner>

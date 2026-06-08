@@ -1,0 +1,20 @@
+<section class="bg-white py-14 lg:py-20">
+    <div class="ap-container">
+        <div class="mx-auto max-w-4xl divide-y divide-aperture-line border-y border-aperture-line">
+            {% for block in contentBlocks %}
+                <article class="grid gap-6 py-10 md:grid-cols-[220px_minmax(0,1fr)]">
+                    <h2 class="font-display text-3xl font-black uppercase leading-none tracking-tight text-aperture-dark">
+                        {{ block.title }}
+                    </h2>
+                    <div class="space-y-5 text-base leading-8 text-aperture-muted">
+                        <p>{{ block.text }}</p>
+                    </div>
+                </article>
+            {% else %}
+                <div class="py-10 text-base leading-8 text-aperture-muted">
+                    No content blocks found for this page.
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

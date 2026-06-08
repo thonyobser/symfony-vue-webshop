@@ -1,0 +1,41 @@
+{% set productImage = product.thumbnail %}
+{% set productImageSrc = storage_url(productImage.url) %}
+{% set imageAspect = imageAspect|default('aspect-[4/3]') %}
+{% set imagePadding = imagePadding|default('p-4 md:p-6') %}
+{% set productHref = path('app_product_detail', { categorySlug: product.categorySlug, productSlug: product.slug }) %}
+{% set productTitle = product.subtitle ? product.name ~ ' (' ~ product.subtitle ~ ')' : product.name %}
+
+<article class="ap-product-card group">
+    <a href="{{ productHref }}" class="block {{ imagePadding }}" aria-label="View {{ productTitle }}">
+        <div class="{{ imageAspect }} overflow-hidden">
+            <img
+                src="{{ productImageSrc }}"
+                alt="{{ productTitle }}"
+                class="h-full w-full object-contain transition duration-300 group-hover:scale-105"
+                loading="lazy"
+            >
+        </div>
+    </a>
+
+    <div class="flex flex-1 flex-col p-4 md:p-5">
+        <h3 class="min-h-[3rem] text-base font-extrabold leading-tight text-aperture-ink">
+            <a href="{{ productHref }}" class="hover:text-aperture-blue">{{ productTitle }}</a>
+        </h3>
+
+        <p class="mt-3 text-sm font-extrabold text-aperture-dark">{{ product.formattedPrice }}</p>
+
+        <div class="mt-auto pt-4">
+            <add-to-cart-button
+                class="ap-button ap-button-primary ap-button-sm w-full"
+                product-id="{{ product.id }}"
+                product-name="{{ productTitle }}"
+                price-cents="{{ product.priceCents }}"
+                image="{{ productImageSrc }}"
+                url="{{ productHref }}"
+            >
+                <span>Add to cart</span>
+                {% include 'shared/icons/cart.html.twig' with { class: 'h-4 w-4 shrink-0' } only %}
+            </add-to-cart-button>
+        </div>
+    </div>
+</article>

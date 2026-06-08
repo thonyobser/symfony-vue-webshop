@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block body %}
+    {% include 'shared/layout/header.html.twig' %}
+
+    <main id="main-content">
+        {% include 'start_page/sections/hero.html.twig' with { heroSlides: heroSlides } only %}
+        {% include 'start_page/sections/featured-products.html.twig' with {
+            products: featuredProducts,
+            featuredTitle: 'Featured Products',
+            featuredActionLabel: 'View All Products',
+            featuredActionHref: path('app_category_show', { slug: 'testing-equipment' })
+        } only %}
+        {% include 'start_page/sections/trust-strip.html.twig' with { usps: usps } only %}
+    </main>
+
+    {% include 'shared/layout/footer.html.twig' %}
+{% endblock %}

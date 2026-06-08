@@ -1,0 +1,81 @@
+{% set header = header|default({
+    homeHref: '/',
+    loginHref: '#',
+    cartHref: path('app_checkout', { step: 'cart' }),
+    searchAction: path('app_search'),
+    announcement: 'Remember: The cake is a lie.'
+}) %}
+
+{% set currentRoute = app.request.attributes.get('_route') %}
+{% set currentCategorySlug = currentRoute == 'app_category_show'
+    ? app.request.attributes.get('slug')
+    : (currentRoute == 'app_product_detail' ? app.request.attributes.get('categorySlug') : null)
+%}
+
+{% set navItems = navItems|default([
+    { label: 'Home', href: path('app_start_page'), route: 'app_start_page' },
+    { label: 'Turrets', href: path('app_category_show', { slug: 'turrets' }), categorySlug: 'turrets' },
+    { label: 'Testing Equipment', href: path('app_category_show', { slug: 'testing-equipment' }), categorySlug: 'testing-equipment' },
+    { label: 'Apparel', href: '#' },
+    { label: 'Accessories', href: '#' },
+    { label: 'Books & Media', href: '#' },
+    { label: 'Clearance', href: '#' }
+]) %}
+
+<header class="relative z-20 border-b border-aperture-line bg-white">
+    <div class="bg-aperture-dark text-white">
+        <div class="ap-container flex h-10 items-center justify-between gap-6 text-xs font-extrabold uppercase tracking-wide">
+            <p class="hidden items-center gap-2 sm:flex">
+                {% include 'shared/icons/brand_small.html.twig' with { class: 'h-4' } only %}
+                <span>{{ header.announcement }}</span>
+            </p>
+
+            <div class="ml-auto flex items-center gap-8">
+                <a href="{{ header.loginHref }}" class="transition hover:text-aperture-blue">Sign In / Create Account</a>
+                <a href="{{ header.cartHref }}" class="inline-flex items-center gap-2 transition hover:text-aperture-blue">
+                    {% include 'shared/icons/cart.html.twig' with { class: 'h-4 w-4' } only %}
+                    <cart-counter></cart-counter>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ap-container flex min-h-28 items-center gap-8 py-5">
+        {% include 'shared/components/brand-logo.html.twig' with {
+            href: header.homeHref,
+            markClass: 'h-16',
+            class: 'shrink-0 text-aperture-dark'
+        } only %}
+
+        <nav class="hidden flex-1 items-center justify-center gap-7 text-xs font-extrabold uppercase tracking-wide text-aperture-ink lg:flex" aria-label="Primary navigation">
+            {% for item in navItems %}
+                {% set isActive = item.active is defined ? item.active : (
+                    (item.route|default(null) and item.route == currentRoute)
+                    or (item.categorySlug|default(null) and item.categorySlug == currentCategorySlug)
+                ) %}
+
+                <a href="{{ item.href }}" class="relative py-3 transition hover:text-aperture-blue {{ isActive ? 'text-aperture-blue after:absolute after:inset-x-0 after:-bottom-4 after:h-0.5 after:bg-aperture-blue' : '' }}"{% if isActive %} aria-current="page"{% endif %}>
+                    {{ item.label }}
+                </a>
+            {% endfor %}
+        </nav>
+
+        <div class="ml-auto flex items-center gap-4">
+            <form action="{{ header.searchAction }}" method="get" class="hidden h-12 w-72 items-center gap-3 rounded-xl border border-aperture-line bg-aperture-panel px-4 xl:flex">
+                <label for="site-search" class="sr-only">Search Aperture Science</label>
+                <input id="site-search" name="q" type="search" value="{{ app.request.query.get('q', '') }}" placeholder="Search Aperture Science..." class="min-w-0 flex-1 border-0 bg-transparent text-sm outline-none placeholder:text-aperture-muted/70">
+                <button type="submit" class="text-aperture-muted transition hover:text-aperture-blue" aria-label="Search">
+                    {% include 'shared/icons/search.html.twig' with { class: 'h-5 w-5' } only %}
+                </button>
+            </form>
+
+            <button type="button" class="inline-flex rounded-md border border-aperture-line p-3 text-aperture-ink lg:hidden" aria-label="Open menu">
+                <span class="block h-4 w-5 space-y-1">
+                    <span class="block h-0.5 bg-current"></span>
+                    <span class="block h-0.5 bg-current"></span>
+                    <span class="block h-0.5 bg-current"></span>
+                </span>
+            </button>
+        </div>
+    </div>
+</header>

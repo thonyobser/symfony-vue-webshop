@@ -1,0 +1,8 @@
+{% set href = href|default('/') %}
+{% set class = class|default('') %}
+{% set markClass = markClass|default('h-14 w-14') %}
+{% set textClass = textClass|default('') %}
+
+<a href="{{ href }}" class="inline-flex items-center gap-3 text-current {{ class }}" aria-label="Aperture Science home">
+    {% include 'shared/icons/brand.html.twig' with { class: markClass } only %}
+</a>

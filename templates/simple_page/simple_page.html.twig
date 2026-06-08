@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ page.title }} | Aperture Science Store{% endblock %}
+
+{% block body %}
+    {% include 'shared/layout/header.html.twig' %}
+
+    <main id="main-content">
+        {% include 'simple_page/sections/hero.html.twig' with { page: page, breadcrumbs: breadcrumbs } only %}
+        {% include 'simple_page/sections/content.html.twig' with { contentBlocks: contentBlocks } only %}
+    </main>
+
+    {% include 'shared/layout/footer.html.twig' %}
+{% endblock %}

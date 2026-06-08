@@ -1,0 +1,11 @@
+<div class="mb-6 flex items-center justify-between gap-6">
+    <h2 class="text-sm font-extrabold uppercase tracking-wide text-aperture-ink md:text-base">
+        {{ title }}
+    </h2>
+
+    {% if actionLabel|default(null) %}
+        <a href="{{ actionHref|default('#') }}" class="text-xs font-extrabold uppercase tracking-[0.12em] text-aperture-blue transition hover:text-blue-800">
+            {{ actionLabel }}
+        </a>
+    {% endif %}
+</div>

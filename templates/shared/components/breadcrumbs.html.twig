@@ -1,0 +1,23 @@
+{% set breadcrumbs = breadcrumbs|default([]) %}
+
+{% if breadcrumbs is not empty %}
+    <nav aria-label="Breadcrumb" class="text-xs font-semibold text-aperture-ink">
+        <ol class="flex flex-wrap items-center gap-2">
+            {% for item in breadcrumbs %}
+                {% set itemUrl = item.url %}
+
+                <li class="flex items-center gap-2">
+                    {% if not loop.first %}
+                        <span class="text-aperture-muted">›</span>
+                    {% endif %}
+
+                    {% if itemUrl and not loop.last %}
+                        <a href="{{ itemUrl }}" class="transition hover:text-aperture-blue">{{ item.label }}</a>
+                    {% else %}
+                        <span class="text-aperture-ink">{{ item.label }}</span>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ol>
+    </nav>
+{% endif %}

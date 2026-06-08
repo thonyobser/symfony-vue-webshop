@@ -1,0 +1,15 @@
+{% set icon = usp.icon == 'aperture' ? 'brand_small' : usp.icon %}
+
+<article class="grid grid-cols-[2.5rem_1fr] gap-4 py-2 md:py-4">
+    <div class="flex h-10 w-10 items-center justify-center text-aperture-ink">
+        {% include [
+            'shared/icons/' ~ icon ~ '.html.twig',
+            'shared/icons/brand.html.twig'
+        ] with { class: 'h-8 w-8' } only %}
+    </div>
+
+    <div>
+        <h3 class="text-sm font-extrabold uppercase tracking-wide text-aperture-ink">{{ usp.title }}</h3>
+        <p class="mt-2 text-sm leading-6 text-aperture-muted">{{ usp.text }}</p>
+    </div>
+</article>

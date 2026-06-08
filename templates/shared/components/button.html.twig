@@ -1,0 +1,23 @@
+{% set variant = variant|default('primary') %}
+{% set size = size|default('md') %}
+{% set class = class|default('') %}
+{% set icon = icon|default(null) %}
+
+{% set variantClass = {
+    primary: 'ap-button-primary',
+    ghost: 'ap-button-ghost',
+    dark: 'ap-button-dark'
+}[variant]|default('ap-button-primary') %}
+
+{% set sizeClass = {
+    sm: 'ap-button-sm',
+    md: 'ap-button-md',
+    lg: 'ap-button-lg'
+}[size]|default('ap-button-md') %}
+
+<a href="{{ href|default('#') }}" class="ap-button {{ variantClass }} {{ sizeClass }} {{ class }}">
+    <span>{{ label }}</span>
+    {% if icon %}
+        {% include 'shared/icons/' ~ icon ~ '.html.twig' ignore missing with { class: 'h-4 w-4 shrink-0' } only %}
+    {% endif %}
+</a>

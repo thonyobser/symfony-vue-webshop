@@ -1,0 +1,116 @@
+{% set footer = footer|default({
+    homeHref: '/',
+    subscribeAction: '#',
+    warning: 'Aperture Science products may be harmful to you.'
+}) %}
+
+{% set footerColumns = footerColumns|default([
+    {
+        title: 'Shop',
+        links: [
+            { label: 'Testing Equipment', href: '#' },
+            { label: 'Apparel', href: '#' },
+            { label: 'Accessories', href: '#' },
+            { label: 'Books & Media', href: '#' },
+            { label: 'Clearance', href: '#' }
+        ]
+    },
+    {
+        title: 'Company',
+        links: [
+            { label: 'About Aperture', href: '#' },
+            { label: 'Careers', href: '#' },
+            { label: 'Quality Assurance', href: '#' },
+            { label: 'Investor Relations', href: '#' },
+            { label: 'Contact Us', href: '#' }
+        ]
+    },
+    {
+        title: 'Support',
+        links: [
+            { label: 'Help Center', href: '#' },
+            { label: 'Returns & Refunds', href: '#' },
+            { label: 'Shipping Information', href: '#' },
+            { label: 'Product Manuals', href: '#' },
+            { label: 'Warranty', href: '#' }
+        ]
+    }
+]) %}
+
+{% set socialLinks = socialLinks|default([
+    { label: 'Aperture community', href: '#', icon: 'brand_small' },
+    { label: 'Facebook', href: '#', icon: 'facebook' },
+    { label: 'Twitter', href: '#', icon: 'twitter' },
+    { label: 'YouTube', href: '#', icon: 'youtube' },
+    { label: 'Instagram', href: '#', icon: 'instagram' }
+]) %}
+
+<footer class="bg-aperture-dark text-white">
+    <div class="ap-container grid gap-10 py-12 lg:grid-cols-[1.35fr_2fr_1.25fr] lg:gap-12 lg:py-14">
+        <section class="lg:border-r lg:border-white/10 lg:pr-10">
+            {% include 'shared/components/brand-logo.html.twig' with {
+                href: footer.homeHref,
+                markClass: 'h-16',
+                class: 'text-white'
+            } only %}
+            <p class="mt-8 max-w-xs text-base leading-7 text-white/70">
+                We do what we must because we can.
+            </p>
+            <p class="mt-7 text-sm text-white/50">© Aperture Science Laboratories</p>
+        </section>
+
+        <nav class="grid gap-8 sm:grid-cols-3" aria-label="Footer navigation">
+            {% for column in footerColumns %}
+                <section>
+                    <h2 class="text-sm font-extrabold uppercase tracking-wide">{{ column.title }}</h2>
+                    <ul class="mt-5 space-y-3 text-sm text-white/70">
+                        {% for link in column.links %}
+                            <li>
+                                <a href="{{ link.href }}" class="transition hover:text-aperture-blue">{{ link.label }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% endfor %}
+        </nav>
+
+        <section class="lg:border-l lg:border-white/10 lg:pl-10">
+            <h2 class="text-sm font-extrabold uppercase tracking-wide">Stay Informed</h2>
+            <p class="mt-5 max-w-sm text-sm leading-6 text-white/70">
+                Subscribe to Aperture Science updates and enrichment communications.
+            </p>
+
+            <form action="{{ footer.subscribeAction }}" method="post" class="mt-7 flex max-w-sm border border-white/20 bg-white/5">
+                <label for="footer-email" class="sr-only">Email address</label>
+                <input id="footer-email" name="email" type="email" placeholder="Enter your email" class="min-w-0 flex-1 border-0 bg-transparent px-4 py-4 text-sm text-white outline-none placeholder:text-white/40">
+                <button type="submit" class="flex w-14 items-center justify-center bg-aperture-blue text-white transition hover:bg-blue-700" aria-label="Subscribe">
+                    {% include 'shared/icons/arrow-right.html.twig' with { class: 'h-5 w-5' } only %}
+                </button>
+            </form>
+
+            <ul class="mt-7 flex items-center gap-5 text-white/60">
+                {% for social in socialLinks %}
+                    <li>
+                        <a href="{{ social.href }}" class="transition hover:text-aperture-blue" aria-label="{{ social.label }}">
+                            {% include 'shared/icons/' ~ social.icon ~ '.html.twig' ignore missing with { class: 'h-5 w-5' } only %}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+
+    <div class="border-t border-white/10">
+        <div class="ap-container flex flex-col gap-6 py-6 text-xs font-extrabold uppercase tracking-wide text-white/70 md:flex-row md:items-center md:justify-between">
+            <p class="flex items-center gap-3 normal-case tracking-normal">
+                {% include 'shared/icons/warning.html.twig' with { class: 'h-8 w-8 text-white/80' } only %}
+                <span><strong class="uppercase tracking-wide text-white">Warning:</strong> {{ footer.warning }}</span>
+            </p>
+
+            <nav class="flex gap-10" aria-label="Legal navigation">
+                <a href="#" class="transition hover:text-aperture-blue">Terms of Service</a>
+                <a href="#" class="transition hover:text-aperture-blue">Privacy Policy</a>
+            </nav>
+        </div>
+    </div>
+</footer>
