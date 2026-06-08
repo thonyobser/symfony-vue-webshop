@@ -1,0 +1,50 @@
+[
+  {
+    "id": "tested-trusted",
+    "title": "Tested & Trusted",
+    "text": "All equipment tested under Aperture Science standards.",
+    "icon": "truck",
+    "areas": [
+      "start_page",
+      "category"
+    ]
+  },
+  {
+    "id": "satisfaction",
+    "title": "Satisfaction Guaranteed",
+    "text": "If your product does not meet expectations, we'll make it right.",
+    "icon": "shield",
+    "areas": [
+      "start_page",
+      "category"
+    ]
+  },
+  {
+    "id": "cake-not-included",
+    "title": "Cake Not Included",
+    "text": "Sadly, cake is not included with any purchase.",
+    "icon": "cake",
+    "areas": [
+      "start_page"
+    ]
+  },
+  {
+    "id": "live-fire-ready",
+    "title": "Live Fire Ready",
+    "text": "All turrets come fully calibrated and testing course approved.",
+    "icon": "rocket",
+    "areas": [
+      "category"
+    ]
+  },
+  {
+    "id": "science-benefits-all",
+    "title": "Science Benefits All",
+    "text": "A portion of proceeds supports Aperture Science initiatives.",
+    "icon": "aperture",
+    "areas": [
+      "start_page",
+      "category"
+    ]
+  }
+]

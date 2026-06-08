@@ -1,0 +1,28 @@
+[
+  {
+    "slug": "about-us",
+    "title": "About Aperture",
+    "eyebrow": "Company",
+    "intro": "We do what we must because we can. For the good of all of us.",
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "url": "/"
+      },
+      {
+        "label": "About Aperture",
+        "url": ""
+      }
+    ],
+    "contentBlocks": [
+      {
+        "title": "Science first",
+        "text": "Aperture Science is committed to reliable testing equipment, measurable outcomes, and legally distinct innovation."
+      },
+      {
+        "title": "Built for tomorrow",
+        "text": "Our products are designed to support test chambers, enrichment centers, and the future of applied science."
+      }
+    ]
+  }
+]

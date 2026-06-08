@@ -1,0 +1,36 @@
+[
+    {
+        "slug":  "turrets",
+        "name":  "Turrets",
+        "title":  "Turrets",
+        "description":  "Designed for accuracy. Built for testing. Every turret is manufactured to Aperture Science quality standards.",
+        "bannerImage":  "https://placehold.co/760x300?text=Turrets",
+        "breadcrumbs":  [
+                            {
+                                "label":  "Home",
+                                "url":  "/"
+                            },
+                            {
+                                "label":  "Turrets",
+                                "url":  "/category/turrets"
+                            }
+                        ]
+    },
+    {
+        "slug":  "testing-equipment",
+        "name":  "Testing Equipment",
+        "title":  "Testing Equipment",
+        "description":  "High-quality testing equipment for a better tomorrow.",
+        "bannerImage":  "https://placehold.co/760x300?text=Testing+Equipment",
+        "breadcrumbs":  [
+                            {
+                                "label":  "Home",
+                                "url":  "/"
+                            },
+                            {
+                                "label":  "Testing Equipment",
+                                "url":  "/category/testing-equipment"
+                            }
+                        ]
+    }
+]
