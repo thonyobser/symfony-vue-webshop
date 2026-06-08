@@ -19,5 +19,11 @@ services:
     App\:
         resource: '../src/'
 
+    App\Shared\Infrastructure\Repository\RepositoryClientInterface:
+        alias: App\Shared\Infrastructure\Repository\JsonRepositoryClient
+
+    App\Shared\Infrastructure\Storage\StorageAdapterInterface:
+        alias: App\Shared\Infrastructure\Storage\LocalStorageAdapter
+
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
