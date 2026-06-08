@@ -1,0 +1,19 @@
+<section class="bg-white py-8 md:py-10 lg:py-12">
+    <div class="ap-container">
+        {% include 'shared/components/breadcrumbs.html.twig' with { breadcrumbs: breadcrumbs } only %}
+
+        <div class="mt-8 grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(420px,0.8fr)] xl:gap-16">
+            {% include 'product_detail/components/product-gallery.html.twig' with {
+                images: product.images,
+                productName: product.name,
+                fallbackImage: product.thumbnail
+            } only %}
+
+            {% include 'product_detail/components/product-purchase-panel.html.twig' with {
+                product: product,
+                category: category,
+                features: features
+            } only %}
+        </div>
+    </div>
+</section>

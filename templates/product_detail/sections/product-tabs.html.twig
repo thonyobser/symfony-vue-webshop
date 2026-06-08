@@ -1,0 +1,62 @@
+<product-tabs class="border-b border-aperture-line bg-white pb-16">
+    <div class="ap-container">
+        <div class="border-b border-aperture-line">
+            <nav class="-mb-px flex gap-12 overflow-x-auto" aria-label="Product information tabs">
+                <a
+                    href="#product-tab-overview"
+                    class="whitespace-nowrap border-b-2 border-aperture-blue py-5 text-xs font-extrabold uppercase tracking-[0.14em] text-aperture-blue"
+                    aria-current="page"
+                    data-product-tab
+                    data-product-tab-target="product-tab-overview"
+                >
+                    Overview
+                </a>
+                <a
+                    href="#product-tab-specifications"
+                    class="whitespace-nowrap border-b-2 border-transparent py-5 text-xs font-extrabold uppercase tracking-[0.14em] text-aperture-dark transition hover:border-aperture-line hover:text-aperture-blue"
+                    aria-current="false"
+                    data-product-tab
+                    data-product-tab-target="product-tab-specifications"
+                >
+                    Specifications
+                </a>
+                <a
+                    href="#product-tab-in-the-box"
+                    class="whitespace-nowrap border-b-2 border-transparent py-5 text-xs font-extrabold uppercase tracking-[0.14em] text-aperture-dark transition hover:border-aperture-line hover:text-aperture-blue"
+                    aria-current="false"
+                    data-product-tab
+                    data-product-tab-target="product-tab-in-the-box"
+                >
+                    In the Box
+                </a>
+            </nav>
+        </div>
+
+        <div id="product-tab-overview" class="max-w-screen-xl pt-8 text-sm leading-7 text-aperture-muted" data-product-tab-panel>
+            <div class="space-y-4">
+                {% for paragraph in tabs.overview %}
+                    <p>{{ paragraph }}</p>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div id="product-tab-specifications" class="hidden max-w-screen-xl pt-8 text-sm leading-7 text-aperture-muted" data-product-tab-panel>
+            <dl class="grid max-w-2xl divide-y divide-aperture-line border-y border-aperture-line">
+                {% for item in tabs.specifications %}
+                    <div class="grid gap-2 py-4 sm:grid-cols-[180px_minmax(0,1fr)]">
+                        <dt class="font-extrabold text-aperture-ink">{{ item.label }}</dt>
+                        <dd>{{ item.value }}</dd>
+                    </div>
+                {% endfor %}
+            </dl>
+        </div>
+
+        <div id="product-tab-in-the-box" class="hidden max-w-screen-xl pt-8 text-sm leading-7 text-aperture-muted" data-product-tab-panel>
+            <ul class="list-disc space-y-2 pl-5">
+                {% for item in tabs.inTheBox %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</product-tabs>

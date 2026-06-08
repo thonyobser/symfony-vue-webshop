@@ -1,0 +1,12 @@
+{% set galleryImages = images %}
+{% set galleryPayload = [] %}
+
+{% for image in galleryImages %}
+    {% set imageSrc = storage_url(image.url) %}
+    {% set galleryPayload = galleryPayload|merge([{ src: imageSrc }]) %}
+{% endfor %}
+
+<product-gallery
+    :images="{{ galleryPayload|json_encode|e('html_attr') }}"
+    product-name="{{ productName }}"
+></product-gallery>

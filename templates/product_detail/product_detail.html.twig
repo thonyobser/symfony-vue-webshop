@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ product.name }} | Aperture Science Store{% endblock %}
+
+{% block body %}
+    {% include 'shared/layout/header.html.twig' %}
+
+    <main id="main-content" class="bg-white">
+        {% include 'product_detail/sections/product-overview.html.twig' with {
+            product: product,
+            category: category,
+            breadcrumbs: breadcrumbs,
+            features: features
+        } only %}
+        {% include 'product_detail/sections/product-tabs.html.twig' with { tabs: tabs } only %}
+    </main>
+
+    {% include 'shared/layout/footer.html.twig' %}
+{% endblock %}

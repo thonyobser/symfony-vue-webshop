@@ -1,0 +1,13 @@
+<ul class="space-y-5">
+    {% for feature in features %}
+        <li class="grid grid-cols-[1.5rem_1fr] items-center gap-4 text-sm text-aperture-muted">
+            <span class="text-aperture-dark">
+                {% include [
+                    'shared/icons/' ~ feature.icon ~ '.html.twig',
+                    'shared/icons/check-circle.html.twig'
+                ] with { class: 'h-5 w-5' } only %}
+            </span>
+            <span>{{ feature.label }}</span>
+        </li>
+    {% endfor %}
+</ul>

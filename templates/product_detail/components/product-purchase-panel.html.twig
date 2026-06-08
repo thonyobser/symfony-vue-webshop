@@ -1,0 +1,59 @@
+<aside class="lg:pt-1">
+    <p class="text-xs font-extrabold uppercase tracking-[0.16em] text-aperture-blue">{{ category.name }}</p>
+
+    <h1 class="mt-4 font-display text-5xl font-black leading-none tracking-tight text-aperture-dark md:text-6xl">
+        {{ product.name }}
+    </h1>
+
+    <p class="mt-8 text-2xl font-extrabold text-aperture-dark">{{ product.formattedPrice }}</p>
+
+    <div class="mt-9 space-y-6 text-sm leading-7 text-aperture-muted">
+        <p>{{ product.shortDescription }}</p>
+        <p>{{ product.description }}</p>
+    </div>
+
+    {% if features is not empty %}
+        <div class="mt-8 border-t border-aperture-line pt-8">
+            {% include 'product_detail/components/product-feature-list.html.twig' with { features: features } only %}
+        </div>
+    {% endif %}
+
+    {% set productImage = product.thumbnail %}
+    {% set productImageSrc = storage_url(productImage.url) %}
+    {% set productHref = path('app_product_detail', { categorySlug: product.categorySlug, productSlug: product.slug }) %}
+    {% set productTitle = product.subtitle ? product.name ~ ' (' ~ product.subtitle ~ ')' : product.name %}
+
+    <add-to-cart-form
+        class="mt-10"
+        product-id="{{ product.id }}"
+        product-name="{{ productTitle }}"
+        price-cents="{{ product.priceCents }}"
+        image="{{ productImageSrc }}"
+        url="{{ productHref }}"
+    >
+        <div class="flex flex-col gap-4 sm:flex-row">
+            {% include 'product_detail/components/quantity-selector.html.twig' with {
+                quantity: 1,
+                name: 'quantity'
+            } only %}
+
+            <button type="submit" class="ap-button ap-button-primary ap-button-lg h-14 flex-1">
+                <span>Add to cart</span>
+                {% include 'shared/icons/cart.html.twig' with { class: 'h-5 w-5 shrink-0' } only %}
+            </button>
+        </div>
+    </add-to-cart-form>
+
+    <form action="#" method="post" class="mt-5">
+        <button type="submit" class="inline-flex h-14 w-full items-center justify-center gap-3 border border-aperture-line bg-white px-6 text-xs font-extrabold uppercase tracking-[0.1em] text-aperture-blue transition hover:border-aperture-blue hover:bg-aperture-panel focus:outline-none focus-visible:ring-2 focus-visible:ring-aperture-blue focus-visible:ring-offset-2">
+            {% include 'shared/icons/heart.html.twig' with { class: 'h-5 w-5 shrink-0' } only %}
+            <span>Add to wishlist</span>
+        </button>
+    </form>
+
+    <div class="mt-10 flex flex-wrap items-center gap-2 text-sm text-aperture-muted">
+        {% include 'shared/icons/check-circle.html.twig' with { class: 'h-5 w-5 text-aperture-dark' } only %}
+        <span class="font-semibold text-aperture-ink">{{ product.inStock ? 'In Stock' : 'Out of Stock' }}</span>
+        <span class="text-aperture-muted">– {{ product.shippingText }}</span>
+    </div>
+</aside>
