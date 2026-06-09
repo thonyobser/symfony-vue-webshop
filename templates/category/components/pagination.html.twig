@@ -3,21 +3,33 @@
 {% set pageHrefs = pageHrefs|default({}) %}
 
 <nav class="mt-10 flex items-center justify-center gap-5" aria-label="Pagination">
-    <a href="{{ previousHref|default('#') }}" class="text-aperture-muted transition hover:text-aperture-blue" aria-label="Previous page">
-        {% include 'shared/icons/chevron-left.html.twig' with { class: 'h-6 w-6' } only %}
-    </a>
+    {% if previousHref|default(null) %}
+        <a href="{{ previousHref }}" class="text-aperture-muted transition hover:text-aperture-blue" aria-label="Previous page">
+            {% include 'shared/icons/chevron-left.html.twig' with { class: 'h-6 w-6' } only %}
+        </a>
+    {% else %}
+        <span class="text-aperture-muted/40" aria-hidden="true">
+            {% include 'shared/icons/chevron-left.html.twig' with { class: 'h-6 w-6' } only %}
+        </span>
+    {% endif %}
 
     {% for page in 1..totalPages %}
         <a
             href="{{ pageHrefs[page]|default('#') }}"
             class="flex h-9 w-9 items-center justify-center rounded border text-sm font-extrabold transition {{ page == currentPage ? 'border-aperture-blue bg-white text-aperture-blue' : 'border-transparent text-aperture-dark hover:border-aperture-line hover:text-aperture-blue' }}"
-            aria-current="{{ page == currentPage ? 'page' : 'false' }}"
+            {% if page == currentPage %}aria-current="page"{% endif %}
         >
             {{ page }}
         </a>
     {% endfor %}
 
-    <a href="{{ nextHref|default('#') }}" class="text-aperture-muted transition hover:text-aperture-blue" aria-label="Next page">
-        {% include 'shared/icons/chevron-right.html.twig' with { class: 'h-6 w-6' } only %}
-    </a>
+    {% if nextHref|default(null) %}
+        <a href="{{ nextHref }}" class="text-aperture-muted transition hover:text-aperture-blue" aria-label="Next page">
+            {% include 'shared/icons/chevron-right.html.twig' with { class: 'h-6 w-6' } only %}
+        </a>
+    {% else %}
+        <span class="text-aperture-muted/40" aria-hidden="true">
+            {% include 'shared/icons/chevron-right.html.twig' with { class: 'h-6 w-6' } only %}
+        </span>
+    {% endif %}
 </nav>

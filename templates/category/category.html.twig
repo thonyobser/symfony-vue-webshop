@@ -11,7 +11,9 @@
         {% include 'category/sections/product-listing.html.twig' with {
             category: category,
             products: products,
-            productCount: productCount
+            productCount: productCount,
+            listingSummary: listingSummary,
+            pagination: pagination
         } only %}
     </main>
 
