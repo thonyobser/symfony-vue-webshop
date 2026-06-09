@@ -1,5 +1,7 @@
 # Symfony Vue Webshop
 
+DEMO URL: https://main-bvxea6i-h7q77eheittlq.eu.platformsh.site/
+
 This project is a webshop sandbox built with Symfony, Vue, Tailwind CSS, and Webpack Encore.
 
 It is meant as a training ground for experimenting with modern frontend/backend workflows, reusable Vue components inside Twig templates, REST APIs, repository and storage adapters, and simple ecommerce features without needing a database-heavy setup.
